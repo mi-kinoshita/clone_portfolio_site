@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <Sns />
           <p className="mt-6 text-neutral-600 dark:text-neutral-400">
-            © {currentYear} Miho Kinoshita. All rights reserved.
+            © {currentYear} portfolio. All rights reserved.
           </p>
         </div>
       </div>

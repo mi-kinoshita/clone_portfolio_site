@@ -12,6 +12,7 @@ import {
 import { Link } from "react-router-dom";
 import Sns from "../components/Sns";
 import ProjectCard from "../components/ProjectCard";
+import projects from "../data/projets";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -37,37 +38,37 @@ export default function Home() {
     },
   ];
 
-  const featuredWorks = [
-    {
-      id: "ai-email-builder",
-      title: "AI Email Builder",
-      description:
-        "An intuitive email builder powered by AI to help create professional emails quickly and efficiently.",
-      image: "/swiftmail_ai_ss.png",
-      tags: ["Next.js", "Convex", "AI Integration"],
-      link: "https://ai-email-builder-omega.vercel.app/",
-    },
-    {
-      id: "design-system",
-      title: "Design System",
-      description:
-        "A comprehensive design system built for scalability and consistency across digital products.",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=2000",
-      tags: ["Design System", "UI/UX", "Documentation"],
-      link: "#",
-    },
-    {
-      id: "portfolio-website",
-      title: "Portfolio Website",
-      description:
-        "A modern portfolio website showcasing design and development work with dark mode and i18n support.",
-      image:
-        "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=2000",
-      tags: ["React", "Tailwind CSS", "Framer Motion"],
-      link: "#",
-    },
-  ];
+  // const featuredWorks = [
+  //   {
+  //     id: "ai-email-builder",
+  //     title: "AI Email Builder",
+  //     description:
+  //       "An intuitive email builder powered by AI to help create professional emails quickly and efficiently.",
+  //     image: "/swiftmail_ai_ss.png",
+  //     tags: ["Next.js", "Convex", "AI Integration"],
+  //     link: "https://ai-email-builder-omega.vercel.app/",
+  //   },
+  //   {
+  //     id: "design-system",
+  //     title: "Design System",
+  //     description:
+  //       "A comprehensive design system built for scalability and consistency across digital products.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=2000",
+  //     tags: ["Design System", "UI/UX", "Documentation"],
+  //     link: "#",
+  //   },
+  //   {
+  //     id: "portfolio-website",
+  //     title: "Portfolio Website",
+  //     description:
+  //       "A modern portfolio website showcasing design and development work with dark mode and i18n support.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=2000",
+  //     tags: ["React", "Tailwind CSS", "Framer Motion"],
+  //     link: "#",
+  //   },
+  // ];
 
   return (
     <main className="pt-16">
@@ -120,7 +121,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <img
-                src="/profire_picture.jpeg"
+                src="/profire_picture.jpg"
                 alt="Profile"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto"
               />
@@ -187,7 +188,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredWorks.map((work) => (
+            {projects.map((work) => (
               <motion.div
                 key={work.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -195,7 +196,7 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <ProjectCard project={work} /> {/* Use ProjectCard component */}
+                <ProjectCard project={work} />
               </motion.div>
             ))}
           </div>

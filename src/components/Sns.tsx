@@ -5,7 +5,7 @@ function Sns() {
   return (
     <div className="flex space-x-6">
       <a
-        href="https://github.com/mi-kinoshita"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400"
@@ -13,7 +13,7 @@ function Sns() {
         <Github size={24} />
       </a>
       <a
-        href="https://www.linkedin.com/in/miho-kinoshita"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400"
@@ -21,7 +21,7 @@ function Sns() {
         <Linkedin size={24} />
       </a>
       <a
-        href="https://x.com/mi__kinoshita"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400"
@@ -29,7 +29,7 @@ function Sns() {
         <Twitter size={24} />
       </a>
       <a
-        href="https://note.com/mi_kinoshita"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-400"

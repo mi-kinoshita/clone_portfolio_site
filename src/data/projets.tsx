@@ -61,7 +61,28 @@ const projects: Project[] = [
     A modern portfolio website showcasing design and development work with dark mode and i18n support.
   `,
   },
-  // Add more projects here
+  {
+    id: "photography-direction",
+    title: "Photography Direction",
+    description:
+      "Supervised and managed photo shoots, ensuring all visuals perfectly aligned with project goals and creative direction.",
+    image: "/portfolio_pic_winter.jpg",
+    tags: ["Photography Direction", "Photo Editing"],
+    fullDescription: `
+    Ensured that visuals aligned with project goals and branding by supervising photo shoots. Arranged necessary items for the shoot and enhanced product appeal using Photoshop for post-production editing.
+  `,
+  },
+  {
+    id: "e-commerce",
+    title: "E-commerce Management",
+    description:
+      "Offering full support for setting up and managing online stores, including product listings, inventory, and sales monitoring.",
+    image: "/ec-pic.jpg",
+    tags: ["E-commerce Direction"],
+    fullDescription: `
+    Offering full support for setting up and managing online stores, including product listings, inventory, and sales monitoring.
+  `,
+  },
 ];
 
 export default projects;

@@ -18,11 +18,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-48 object-cover"
-      />
+      <Link to={`/projects/${project.id}`}>
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-48 object-cover"
+        />
+      </Link>
       <div className="p-6">
         <h3 className="text-xl font-bold text-neutral-900 dark:text-neutral-50">
           {project.title}
